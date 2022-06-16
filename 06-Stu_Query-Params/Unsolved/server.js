@@ -12,9 +12,9 @@ const sortHelper = (type) =>
 
 // TODO: Add a comment describing the functionality of this route
 
-app.get('/api/terms/', (req, res) => {
+app.get('/api/terms/', (req, res) => { //returns a json, formatted using a sort query string
   // TODO: Add a comment describing the req.query object
-
+  //contains information relating to the request
   const hasQuery = Object.keys(req.query).length > 0;
 
   if (hasQuery && req.query.sort === 'dsc') {
